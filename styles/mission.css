@@ -1,0 +1,64 @@
+/* main section styles */
+body {
+    font-family: 'Inter', sans-serif;
+    font-family: 'Merriweather', serif;
+}
+
+.fast-banner {
+    background-image: url('../images/Banner\ Image.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 10px;
+    width: 1500px;
+    height: 600px;
+    margin: 50px auto;
+    background-position: center;
+    padding-bottom: 100px;
+}
+
+.section-welcome {
+    color: #FFF;
+    text-align: center;
+    font-size: 32px;
+    font-weight: 400;
+    padding-top: 170px;
+}
+
+.section-Celebration {
+    color: #FFF;
+    text-align: center;
+    font-size: 72px;
+    font-weight: 900;
+    line-height: 95px;
+}
+/* orange section styles */
+.section-orange {
+    text-align: center;
+}
+
+.section-discount {
+    color: #F00;
+    font-size: 88px;
+    font-weight: 700;
+    margin-top: 120px;
+    margin-bottom: 48px;
+}
+
+.section-deals {
+    color: #F00;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.section-categories {
+    color: #070211;
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 48px;
+}
+/*  */
+.second-banner{
+    background-image: url('../images/Vectorrr.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
