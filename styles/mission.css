@@ -9,7 +9,7 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     border-radius: 10px;
-    width: 1500px;
+    width: 1540px;
     height: 600px;
     margin: 50px auto;
     background-position: center;
@@ -31,6 +31,7 @@ body {
     font-weight: 900;
     line-height: 95px;
 }
+
 /* orange section styles */
 .section-orange {
     text-align: center;
@@ -56,9 +57,45 @@ body {
     font-weight: 700;
     margin-bottom: 48px;
 }
+
 /*  */
-.second-banner{
+.second-banner {
     background-image: url('../images/Vectorrr.png');
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
+    width: 1540px;
+    height: 600px;
+    margin: 120px auto;
+    padding-bottom: 100px;
+}
+
+.section-party {
+    color: #FFF;
+    font-family: Merriweather;
+    font-size: 64px;
+    font-weight: 900;
+    line-height: 88px;
+    letter-spacing: 7.04px;
+    padding-top: 165px;
+    padding-left: 245px;
+}
+
+.section-party-info {
+    color: rgba(255, 255, 255, 0.80);
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30px;
+    margin-left: 245px;;
+    margin-bottom: 200px;
+    display: flex;
+}
+.section-banner2{
+    padding: 30px 30px 0px 150px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.picture-2024{
+    align-items: ;
 }
