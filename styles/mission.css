@@ -4,14 +4,17 @@ body {
     font-family: 'Merriweather', serif;
 }
 
+main {
+    width: 1340px;
+    margin: 0 auto;
+}
+
 .fast-banner {
-    background-image: url('../images/Banner\ Image.png');
+    border-radius: 16px;
+    background: linear-gradient(180deg, #070211 0%, rgba(7, 2, 17, 0.00) 100%), url('../images/Banner\ Image.png');
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 100%;
     border-radius: 10px;
-    width: 1540px;
-    height: 600px;
-    margin: 50px auto;
     background-position: center;
     padding-bottom: 100px;
 }
@@ -22,6 +25,7 @@ body {
     font-size: 32px;
     font-weight: 400;
     padding-top: 170px;
+    padding-right: 37px;
 }
 
 .section-Celebration {
@@ -30,6 +34,8 @@ body {
     font-size: 72px;
     font-weight: 900;
     line-height: 95px;
+    padding-bottom: 50px;
+    padding-right: 37px;
 }
 
 /* orange section styles */
@@ -58,44 +64,159 @@ body {
     margin-bottom: 48px;
 }
 
-/*  */
-.second-banner {
-    background-image: url('../images/Vectorrr.png');
+/* section party styles */
+.section-party {
+    display: flex;
+    background: linear-gradient(90deg, #070211 0%, rgba(7, 2, 17, 0.00) 100%), url('../images/Vectorrr.png');
     background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    width: 1540px;
-    height: 600px;
-    margin: 120px auto;
-    padding-bottom: 100px;
+    background-size: 100%;
+    padding-bottom: 70px;
+    margin: 160px auto;
 }
 
-.section-party {
+.section-party-title {
     color: #FFF;
-    font-family: Merriweather;
     font-size: 64px;
     font-weight: 900;
     line-height: 88px;
     letter-spacing: 7.04px;
-    padding-top: 165px;
-    padding-left: 245px;
+    padding-top: 50px;
+    padding-left: 124px;
 }
 
-.section-party-info {
+.section-party-description {
     color: rgba(255, 255, 255, 0.80);
     font-size: 18px;
     font-weight: 400;
     line-height: 30px;
-    margin-left: 245px;;
-    margin-bottom: 200px;
-    display: flex;
+    padding-left: 124px;
+    padding-bottom: 20px;
 }
-.section-banner2{
-    padding: 30px 30px 0px 150px;
-    display: flex;
+
+a {
+    color: #FFF;
+    font-size: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+    list-style: none;
+    text-decoration: none;
+    padding-left: 124px;
+    p
+}
+
+.section-party img {
+    width: 341.641px;
+    height: 440.641px;
+    padding-top: 90px;
+    padding-left: 40px;
+}
+
+/* event-details section styles */
+.event {
+    color: #070211;
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 24px;
+    text-transform: capitalize;
+    text-align: center;
+    background: linear-gradient(180deg, rgba(255, 0, 0, 0.10) 0%, rgba(255, 0, 0, 0.00) 100%);
+    padding-top: 100px;
+    background-size: 100%;
+    margin: 140px auto;
+}
+
+.event-details {
+    color: #F00;
+    text-align: center;
+    font-family: Inter;
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 24px;
+    text-transform: capitalize;
+}
+
+#join {
+    color: #FFF;
+    font-size: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+    border-radius: 8px;
+    background: #F00;
+    padding: 16px 32px;
+    display: inline-flex;
+    padding: 16px 32px;
+    justify-content: center;
     align-items: center;
-    justify-content: space-between;
+    gap: 10px;
 }
-.picture-2024{
-    align-items: ;
+
+/* section offer STYLES */
+
+.offer {
+    width: 900px;
+    margin: 130px auto;
+    background: #FFF;
+    padding: 20px 250px;
+    display: flex;
+}
+
+img {
+    border-radius: 364.844px;
+    border-radius: 364.844px;
+    background: url(<path-to-image>), lightgray -91.279px 0px / 150.038% 100% no-repeat;
+    border-radius: 463px;
+    border: 15px solid #F00;
+    width: 364.844px;
+    height: 364.844px;
+    background-size: 100%;
+    align-items: center;
+}
+
+.new-offer {
+    color: #F00;
+    font-size: 24px;
+    font-weight: 500;
+    padding-right: 200px;
+    
+}
+
+.coming-soon {
+    color: #070211;
+    font-size: 48px;
+    ;
+    font-weight: 900;
+    text-transform: capitalize;
+}
+
+.offer-description {
+    color: rgba(7, 2, 17, 0.60);
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 32px;
+}
+.section-2024{
+    margin-bottom: 250px;
+}
+
+.year {
+    color: #F00;
+    font-size: 48px;
+    font-weight: 700;
+}
+
+.year-description {
+    color: rgba(7, 2, 17, 0.60);
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 32px;
+}
+
+
+/* footer section styles */
+.section-footer {
+    width: 1600px;
+    height: 609px;
+    background: #070211;
+    margin-top: 250px;
+    padding: 120px;
 }
