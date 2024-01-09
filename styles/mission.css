@@ -5,7 +5,7 @@ body {
 }
 
 main {
-    width: 1340px;
+    width: 1320px;
     margin: 0 auto;
 }
 
@@ -69,8 +69,8 @@ main {
     display: flex;
     background: linear-gradient(90deg, #070211 0%, rgba(7, 2, 17, 0.00) 100%), url('../images/Vectorrr.png');
     background-repeat: no-repeat;
-    background-size: 100%;
-    padding-bottom: 70px;
+    border-radius: 16px;
+    padding: 70px 0;
     margin: 160px auto;
 }
 
@@ -93,7 +93,7 @@ main {
     padding-bottom: 20px;
 }
 
-a {
+.join-party {
     color: #FFF;
     font-size: 20px;
     font-weight: 700;
@@ -101,38 +101,25 @@ a {
     list-style: none;
     text-decoration: none;
     padding-left: 124px;
-    p
 }
 
-.section-party img {
-    width: 341.641px;
-    height: 440.641px;
-    padding-top: 90px;
-    padding-left: 40px;
-}
 
 /* event-details section styles */
 .event {
+    background: linear-gradient(180deg, rgba(255, 0, 0, 0.10) 0%, rgba(255, 0, 0, 0.00) 100%);
     color: #070211;
     font-size: 32px;
     font-weight: 600;
     line-height: 24px;
     text-transform: capitalize;
     text-align: center;
-    background: linear-gradient(180deg, rgba(255, 0, 0, 0.10) 0%, rgba(255, 0, 0, 0.00) 100%);
-    padding-top: 100px;
-    background-size: 100%;
-    margin: 140px auto;
+    padding: 100px;
+    margin: 0 auto;
+    border-radius: 16px;
 }
 
 .event-details {
     color: #F00;
-    text-align: center;
-    font-family: Inter;
-    font-size: 32px;
-    font-weight: 600;
-    line-height: 24px;
-    text-transform: capitalize;
 }
 
 #join {
@@ -147,28 +134,40 @@ a {
     padding: 16px 32px;
     justify-content: center;
     align-items: center;
-    gap: 10px;
+    text-decoration: none;
 }
 
 /* section offer STYLES */
 
 .offer {
-    width: 900px;
-    margin: 130px auto;
+    align-items: center;
     background: #FFF;
-    padding: 20px 250px;
     display: flex;
+    justify-content: space-around;
+    gap: 70px;
+    margin: 120px auto;
 }
 
-img {
+.section-offer {
+    max-width: 33.33%;
+}
+
+.offer-mid-img {
+    max-width: 33.33%;
+}
+
+.section-2024 {
+    max-width: 33.33%;
+    padding-left: 40px;
+}
+
+
+.pic-ellipse {
     border-radius: 364.844px;
-    border-radius: 364.844px;
-    background: url(<path-to-image>), lightgray -91.279px 0px / 150.038% 100% no-repeat;
-    border-radius: 463px;
     border: 15px solid #F00;
-    width: 364.844px;
-    height: 364.844px;
-    background-size: 100%;
+    background-size: 33%;
+    background-repeat: no-repeat;
+    padding: 30px;
     align-items: center;
 }
 
@@ -176,14 +175,12 @@ img {
     color: #F00;
     font-size: 24px;
     font-weight: 500;
-    padding-right: 200px;
-    
+    padding-top: 50px;
 }
 
 .coming-soon {
     color: #070211;
     font-size: 48px;
-    ;
     font-weight: 900;
     text-transform: capitalize;
 }
@@ -194,28 +191,194 @@ img {
     font-weight: 400;
     line-height: 32px;
 }
-.section-2024{
-    margin-bottom: 250px;
-}
 
 .year {
     color: #F00;
     font-size: 48px;
     font-weight: 700;
+    padding-top: 100px;
+    padding-right: 100px;
 }
 
 .year-description {
     color: rgba(7, 2, 17, 0.60);
     font-size: 20px;
     font-weight: 400;
+    line-height: 20px;
+}
+
+/* sale section styles */
+
+
+.sale-top-title {
+    margin: 0;
+    color: #070211;
+    font-size: 24px;
+    font-weight: 500;
+    text-align: center;
+}
+
+.sale-day {
+    color: #F00;
+    text-align: center;
+    font-size: 72px;
+    font-weight: 900;
+}
+
+.sale-top-sub-title {
+    margin: 0;
+    padding-top: 15px;
+    padding-bottom: 25px;
+    color: #070211;
+    text-align: center;
+    font-size: 72px;
+    font-weight: 900;
+}
+
+.sale-top-description {
+    max-width: 70%;
+    color: rgba(7, 2, 17, 0.60);
+    text-align: center;
+    font-size: 20px;
+    font-weight: 500;
     line-height: 32px;
+    margin: 0 auto;
+    padding-bottom: 60px;
+}
+
+.sale-mid {
+    background-image: url('../images/sale-mid-bg.png');
+    background-repeat: no-repeat;
+    background-position: top right;
+    align-items: center;
+    display: flex;
+}
+
+
+.sale-mid-left-img {
+    z-index: 999;
+    margin-bottom: -17.5%;
+}
+
+.sale-down {
+    height: 220px;
+    background-image: url('../images/Rectangle\ 2.png');
+    border-radius: 16px 0px 16px 16px;
+    background-repeat: no-repeat;
+}
+
+/* portfolio section styles */
+
+.portfolio-container {
+    margin: 120px auto;
+}
+
+.portfolio-sub-title {
+    color: #F00;
+    font-family: Inter;
+    font-size: 24px;
+    font-weight: 500;
+    margin: 0;
+    padding-bottom: 5px;
+}
+
+.portfolio-title {
+    color: #070211;
+    font-family: Merriweather;
+    font-size: 48px;
+    font-weight: 900;
+    text-transform: capitalize;
+    margin: 0;
+}
+
+.portfolio-description {
+    color: rgba(7, 2, 17, 0.60);
+    font-family: Inter;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 32px;
+    margin: 0;
+    padding-top: 10px;
+}
+
+.image-gifs {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+
+}
+
+/* Subscribe section styles */
+
+.subscribe-container {
+    text-align: center;
+    margin: 140px auto;
+    border-radius: 16px;
+    background: rgba(255, 0, 0, 0.05);
+    padding: 120px 0;
+}
+
+.subscribe-title {
+    color: #070211;
+    text-align: center;
+    font-family: Merriweather;
+    font-size: 48px;
+    font-weight: 900;
+    text-transform: capitalize;
+    margin: 0;
+    padding-bottom: 5px;
+}
+
+.subscribe-description {
+    color: rgba(7, 2, 17, 0.60);
+    text-align: center;
+    font-family: Inter;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 32px;
+}
+
+.textarea {
+    border-radius: 50px;
+    background: #FFF;
+    text-align: center;
+    padding-right: 250px;
+}
+
+.submit {
+    border-radius: 0px 50px 50px 0px;
+    background: #F00;
+    text-align: center;
+} 
+
+.message{
+    justify-content: space-around;
+    display: flex;
+}
+
+.user {
+    text-align: center;
+    color: rgba(7, 2, 17, 0.30);
+    text-align: center;
+    font-family: Inter;
+    font-size: 18px;
+    font-weight: 400;
+
+}
+
+.subscribe-down {
+    color: #FFF;
+    text-align: center;
+    font-family: Inter;
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: capitalize;
 }
 
 
 /* footer section styles */
 .section-footer {
-    width: 1600px;
-    height: 609px;
+
     background: #070211;
     margin-top: 250px;
     padding: 120px;
