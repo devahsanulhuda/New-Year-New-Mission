@@ -1,4 +1,9 @@
-/* main section styles */
+/* common shared styles */
+* {
+    margin: 0;
+    padding: 0;
+}
+
 body {
     font-family: 'Inter', sans-serif;
     font-family: 'Merriweather', serif;
@@ -9,7 +14,10 @@ main {
     margin: 0 auto;
 }
 
-.fast-banner {
+/* main section styles */
+
+.hero {
+    margin-top: 50px;
     border-radius: 16px;
     background: linear-gradient(180deg, #070211 0%, rgba(7, 2, 17, 0.00) 100%), url('../images/Banner\ Image.png');
     background-repeat: no-repeat;
@@ -19,7 +27,7 @@ main {
     padding-bottom: 100px;
 }
 
-.section-welcome {
+.hero-section-welcome {
     color: #FFF;
     text-align: center;
     font-size: 32px;
@@ -28,7 +36,7 @@ main {
     padding-right: 37px;
 }
 
-.section-Celebration {
+.hero-section-Celebration {
     color: #FFF;
     text-align: center;
     font-size: 72px;
@@ -38,12 +46,12 @@ main {
     padding-right: 37px;
 }
 
-/* orange section styles */
-.section-orange {
+/* holiday section styles */
+.holiday {
     text-align: center;
 }
 
-.section-discount {
+.holiday-discount {
     color: #F00;
     font-size: 88px;
     font-weight: 700;
@@ -51,21 +59,22 @@ main {
     margin-bottom: 48px;
 }
 
-.section-deals {
+.holiday-deals {
     color: #F00;
     font-size: 24px;
     font-weight: 500;
 }
 
-.section-categories {
+.holiday-categories {
     color: #070211;
     font-size: 48px;
     font-weight: 700;
     margin-bottom: 48px;
 }
 
-/* section party styles */
-.section-party {
+/* party section styles */
+
+.party {
     display: flex;
     background: linear-gradient(90deg, #070211 0%, rgba(7, 2, 17, 0.00) 100%), url('../images/Vectorrr.png');
     background-repeat: no-repeat;
@@ -74,7 +83,7 @@ main {
     margin: 160px auto;
 }
 
-.section-party-title {
+.party-title {
     color: #FFF;
     font-size: 64px;
     font-weight: 900;
@@ -84,7 +93,7 @@ main {
     padding-left: 124px;
 }
 
-.section-party-description {
+.party-description {
     color: rgba(255, 255, 255, 0.80);
     font-size: 18px;
     font-weight: 400;
@@ -93,7 +102,7 @@ main {
     padding-bottom: 20px;
 }
 
-.join-party {
+.party-join {
     color: #FFF;
     font-size: 20px;
     font-weight: 700;
@@ -104,25 +113,43 @@ main {
 }
 
 
-/* event-details section styles */
+/* event section styles */
+
 .event {
+    text-align: center;
     background: linear-gradient(180deg, rgba(255, 0, 0, 0.10) 0%, rgba(255, 0, 0, 0.00) 100%);
+    margin: 120 0;
+    border-radius: 16px;
+    padding: 100px 0;
+}
+
+.event-description{
     color: #070211;
+    font-family: Inter;
     font-size: 32px;
     font-weight: 600;
-    line-height: 24px;
+    line-height: 56px;
     text-transform: capitalize;
-    text-align: center;
-    padding: 100px;
-    margin: 0 auto;
-    border-radius: 16px;
 }
 
-.event-details {
+.event-details{
     color: #F00;
+    padding-top: 120px;
+    font-family: Inter;
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 56px;
+    text-transform: capitalize;
+
 }
 
-#join {
+.event-bnt-primary{
+    margin-top: 70px;
+}
+
+
+
+#event-join-bnt-primary{
     color: #FFF;
     font-size: 20px;
     font-weight: 700;
@@ -137,7 +164,7 @@ main {
     text-decoration: none;
 }
 
-/* section offer STYLES */
+/* offer section STYLES */
 
 .offer {
     align-items: center;
@@ -148,21 +175,21 @@ main {
     margin: 120px auto;
 }
 
-.section-offer {
-    max-width: 33.33%;
+.offer-top {
+    max-width: 100%;
 }
 
-.offer-mid-img {
-    max-width: 33.33%;
+.offer-mid {
+    max-width: 100%;
 }
 
-.section-2024 {
-    max-width: 33.33%;
+.offer-down {
+    max-width: 100%;
     padding-left: 40px;
 }
 
 
-.pic-ellipse {
+.offer-mid-img {
     border-radius: 364.844px;
     border: 15px solid #F00;
     background-size: 33%;
@@ -171,18 +198,19 @@ main {
     align-items: center;
 }
 
-.new-offer {
+.offer-title {
     color: #F00;
     font-size: 24px;
     font-weight: 500;
     padding-top: 50px;
 }
 
-.coming-soon {
+.offer-coming-soon {
     color: #070211;
     font-size: 48px;
     font-weight: 900;
     text-transform: capitalize;
+    padding-bottom: 20px;
 }
 
 .offer-description {
@@ -192,19 +220,19 @@ main {
     line-height: 32px;
 }
 
-.year {
+.offer-down-title {
     color: #F00;
     font-size: 48px;
     font-weight: 700;
-    padding-top: 100px;
-    padding-right: 100px;
+    padding-bottom: 10px;
 }
 
-.year-description {
+.offer-down-description {
     color: rgba(7, 2, 17, 0.60);
     font-size: 20px;
     font-weight: 400;
     line-height: 20px;
+    padding-bottom: 50px;
 }
 
 /* sale section styles */
@@ -301,11 +329,12 @@ main {
     padding-top: 10px;
 }
 
-.image-gifs {
+
+.image-gifts {
     display: flex;
     justify-content: space-between;
-    gap: 10px;
-
+    gap: 24px;
+    margin-bottom: 24px;
 }
 
 /* Subscribe section styles */
@@ -336,50 +365,93 @@ main {
     font-size: 20px;
     font-weight: 400;
     line-height: 32px;
+    padding-bottom: 50px;
 }
 
-.textarea {
-    border-radius: 50px;
-    background: #FFF;
-    text-align: center;
-    padding-right: 250px;
-}
 
-.submit {
-    border-radius: 0px 50px 50px 0px;
-    background: #F00;
-    text-align: center;
-} 
-
-.message{
-    justify-content: space-around;
-    display: flex;
-}
-
-.user {
+.form-style input[type="email"] {
     text-align: center;
     color: rgba(7, 2, 17, 0.30);
     text-align: center;
     font-family: Inter;
     font-size: 18px;
     font-weight: 400;
+    margin: 0;
+    border-radius: 50px 0px 0px 50px;
+    border: none;
+    padding: 24px 246px 24px 3px;
+
 
 }
 
-.subscribe-down {
+.form-style input[type="submit"] {
     color: #FFF;
     text-align: center;
     font-family: Inter;
     font-size: 20px;
     font-weight: 600;
     text-transform: capitalize;
+    border-radius: 0px 50px 50px 0px;
+    background: #F00;
+    text-align: center;
+    padding: 22px 30px 22.5px 36px;
+    margin: 0 0 0 -3px;
+    border: none;
 }
 
 
 /* footer section styles */
-.section-footer {
 
+
+footer {
     background: #070211;
-    margin-top: 250px;
-    padding: 120px;
 }
+
+.footer {
+    width: 1320px;
+    padding: 120px 0;
+    margin: 0 auto;
+}
+
+.footer-top {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-top {
+    color: #FFF;
+    font-family: Inter;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 40px;
+    padding-bottom: 50px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.footer-top-right-contact {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+
+
+.footer-mid {
+    padding: 50px 0;
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.footer-down {
+    color: #FFF;
+    font-family: Inter;
+    font-size: 24px;
+    font-weight: 500;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 50px;
+}
+
+/* end of the footer section styles */
